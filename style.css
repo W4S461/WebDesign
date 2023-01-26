@@ -1,0 +1,67 @@
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: rgb(211, 126, 22)
+}
+.btn-outline-dark {
+    color: #fff;
+    background-color: #000;
+    border-color: #fff;
+}
+.btn-outline-dark:hover {
+    background-color: rgb(211, 126, 22);
+}
+#hero {
+    width: 100%;
+    height: auto;
+    background: url(https://images.unsplash.com/photo-1571596452298-17d224806cbe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+
+    background-size: cover;
+    position: relative;
+}
+#hero .container {
+    position: relative;
+    padding-top: 75px;
+}
+#hero h1 {
+    margin: 0;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 64px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#hero p {
+    color: #fff;
+    margin: 10px 0 0 0;
+    font-size: 18px;
+}
+#hero .icon-box h3 {
+    font-weight: 700;
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 26px;
+}
+#hero .icon-box h3 a {
+    color: #fff;
+}
+#hero .icon-box h3 a:hover {
+    color: rgb(211, 126, 22);
+}
+.icon-box {
+    padding: 30px 20px;
+    border: 1px solid rgb(109, 109, 109);
+    height: 100%;
+    text-align: center;
+}
+.icon-box:hover {
+    border-color: rgb(211, 126, 22);
+}
+img{
+    width: 745x;
+    height: 745px;
+    object-fit: cover;
+}
+ 

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=dewice-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>MyJB</title>
+</head>
+<body>
+    <header id="header" class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000;">
+            <div class = "container">
+                <a href ="#" class="navbar-brand">My JB</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navContent">
+                    <ul class="navbar-nav me-auto mb-3 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="AboutMe.html" class="nav-link">AboutMe</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Blog.html" class="nav-link">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="galleria.html" class="nav-link">Gallery</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" id="navDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false">Something else</a>
+                            <ul class="dropdown-menu" aria-labelledby="navDrop">
+                                <li><a href="dropdown.html" class="dropdown-item">Kalkulator</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+            <form action="#" class="d-flex">
+                <input type="search" placeholder="Search" class= "form-control me-2">
+                <button type="submit" class="btn btn-outline-dark me-2">Search</button>
+            </form>
+            <div class="d-flex">
+                <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign in</button>
+                <button class="btn btn-outline-danger ms-2" data-bs-toggle="collapse" data-bs-target="#collapseExample"aria-expanded="false" aria-controls="collapseExample">Register</button>
+            </div>
+        </div>
+    </div>
+    </nav>
+    </header>
+    <!---Modal--->
+        <div class="modal fade" id="exampleModal" tabindex="-1"aria-bs-labelledby="exampleModalLabel" aria-bs-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="exampleModalLabel">Login Form</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-bs-label="close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="row-mb-3">
+                                <label for="inputEmail" class="col-sm-2-col-form-label">
+                                    Email
+                                </label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control" id="inputEmail">
+                                </div>
+                            </div>
+                            <div class="row-mb-3">
+                                <label for="inputPass" class="col-sm-2-col-form-label">
+                                    Password
+                                </label><div class="col-sm-10">
+                                    <input type="pass" class="form-control" id="inputPass">
+                                </div>
+                            </div>
+                            <!-- <fieldset>
+                                <div class="row mb-3 my-3">
+                                    <div class="col-form-label col-sm-2"></div>
+                                    <div class="col-sm-10">
+                                        <div class="form-check">
+                                            <input type="checkbox" id="gridCheck" class="form-check-input">
+                                            <label for="gridCheck" class="form-check-label">Save password</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset> -->
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                      </div>
+                </div>
+            </div>
+        </div>
+    <!---Modal--->
+    <!--Collapse-->
+    <div class="collapse mt-5 text-center" id="collapseExample">
+        <div class="card card-body">
+          Sorry, but this element doesn't work
+        </div>
+    </div>
+    <!--Collapse-->
+<section id="hero">
+<div class="container py-5">
+    <h1 class="h3 text-center my-5">Galleria zdjęć</h1>
+    <div class="row">
+        <div class="col-lg-3 col-md-4 col-6 thumb">
+            <a data-fancybox="gallery" href="assets/images/renderingcar01.jpg">
+                <img class="img-fluid" src="assets/images/renderingcar01.jpg" alt="...">
+                <button class="close-button" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 thumb">
+            <a data-fancybox="gallery" href="assets/images/handddd.jpg">
+                <img class="img-fluid" src="assets/images/handddd.jpg" alt="...">
+                <button class="close-button" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 thumb">
+            <a data-fancybox="gallery" href="assets/images/renderingcar02.jpg">
+                <img class="img-fluid" src="assets/images/renderingcar02.jpg" alt="...">
+                <button class="close-button" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 thumb">
+            <a data-fancybox="gallery" href="assets/images/Screenshot_17.png">
+                <img class="img-fluid" src="assets/images/Screenshot_17.png" alt="...">
+                <button class="close-button" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-3 col-md-4 col-6 thumb">
+            <a data-fancybox="gallery" href="assets/images/Screenshot_21.png">
+                <img class="img-fluid" src="assets/images/Screenshot_21.png" alt="...">
+                <button class="close-button" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 thumb">
+            <a data-fancybox="gallery" href="assets/images/Screenshot_23.png">
+                <img class="img-fluid" src="assets/images/Screenshot_23.png" alt="...">
+                <button class="close-button" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 thumb">
+            <a data-fancybox="gallery" href="assets/images/renderingcar01.jpg">
+                <img class="img-fluid" src="assets/images/renderingcar01.jpg" alt="...">
+                <button class="close-button" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 thumb">
+            <a data-fancybox="gallery" href="assets/images/handddd.jpg">
+                <img class="img-fluid" src="assets/images/handddd.jpg" alt="...">
+                <button class="close-button" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3 col-md-4 col-6 thumb">
+            <a data-fancybox="gallery" href="assets/images/renderingcar01.jpg">
+                <img class="img-fluid" src="assets/images/renderingcar01.jpg" alt="...">
+                <button class="close-button" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 thumb">
+            <a data-fancybox="gallery" href="assets/images/handddd.jpg">
+                <img class="img-fluid" src="assets/images/handddd.jpg" alt="...">
+                <button class="close-button" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 thumb">
+            <a data-fancybox="gallery" href="assets/images/renderingcar01.jpg">
+                <img class="img-fluid" src="assets/images/renderingcar01.jpg" alt="...">
+                <button class="close-button" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 thumb">
+            <a data-fancybox="gallery" href="assets/images/handddd.jpg">
+                <img class="img-fluid" src="assets/images/handddd.jpg" alt="...">
+                <button class="close-button" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-3 col-md-4 col-6 thumb">
+            <a data-fancybox="gallery" href="assets/images/renderingcar01.jpg">
+                <img class="img-fluid" src="assets/images/renderingcar01.jpg" alt="...">
+                <button class="close-button" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 thumb">
+            <a data-fancybox="gallery" href="assets/images/handddd.jpg">
+                <img class="img-fluid" src="assets/images/handddd.jpg" alt="...">
+                <button class="close-button" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 thumb">
+            <a data-fancybox="gallery" href="assets/images/renderingcar01.jpg">
+                <img class="img-fluid" src="assets/images/renderingcar01.jpg" alt="...">
+                <button class="close-button" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 thumb">
+            <a data-fancybox="gallery" href="assets/images/handddd.jpg">
+                <img class="img-fluid" src="assets/images/handddd.jpg" alt="...">
+                <button class="close-button" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </a>
+        </div>
+    </div>
+</div>
+</section>
+
+<style>
+    .close-button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 18px;
+        background-color: white;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+</style>
+
+<script>
+    $('.close-button').click(function() {
+        $(this).closest('.thumb').hide();
+    });
+</script>
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
